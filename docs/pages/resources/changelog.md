@@ -18,6 +18,8 @@ New versions of Shoelace are released as-needed and generally occur when a criti
 - Added Ukrainian translation [#2270]
 - Added support for <kbd>Enter</kbd> to `<sl-split-panel>` to align with ARIA APG's [window splitter pattern](https://www.w3.org/WAI/ARIA/apg/patterns/windowsplitter/) [#2234]
 - Added community maintained docs for Svelte [#2262]
+- Fixed a bug in `<sl-select>` when setting the value property before the element connected. [#2255]
+- Fixed a bug in `<sl-select>` where it was using the wrong tag name. [#2287]
 - Fixed a bug in `<sl-carousel>` that caused the navigation icons to be reversed
 - Fixed a bug in `<sl-carousel>` that caused interactive elements to be activated when dragging [#2196]
 - Fixed a bug in `<sl-carousel>` that caused out of order slides when used inside a resize observer [#2260]
