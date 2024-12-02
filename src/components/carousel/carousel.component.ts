@@ -506,6 +506,9 @@ export default class SlCarousel extends ShoelaceElement {
   }
 
   private scrollToSlide(slide: HTMLElement, behavior: ScrollBehavior = 'smooth') {
+    // This can happen if goToSlide is called before the scroll container is rendered
+    // We will have correctly set the activeSlide in goToSlide which will get picked up when initializeSlides is called.
+    if (!this.scrollContainer) { return; }
     const scrollContainer = this.scrollContainer;
     const scrollContainerRect = scrollContainer.getBoundingClientRect();
     const nextSlideRect = slide.getBoundingClientRect();
