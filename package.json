@@ -64,8 +64,7 @@
     "test:component": "web-test-runner -- --watch --group",
     "test:watch": "web-test-runner --watch --group default",
     "spellcheck": "cspell \"**/*.{js,ts,json,html,css,md}\" --no-progress",
-    "list-outdated-dependencies": "npm-check-updates --format repo --peer",
-    "update-dependencies": "npm-check-updates --peer -u && npm install"
+    "check-updates": "npx npm-check-updates -i"
   },
   "engines": {
     "node": ">=14.17.0"
