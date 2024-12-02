@@ -14,11 +14,17 @@ New versions of Shoelace are released as-needed and generally occur when a criti
 
 ## Next
 
+- Added Norwegian translations for Bokmål and Nynorsk [#2268]
+- Added Ukrainian translation [#2270]
 - Added support for <kbd>Enter</kbd> to `<sl-split-panel>` to align with ARIA APG's [window splitter pattern](https://www.w3.org/WAI/ARIA/apg/patterns/windowsplitter/) [#2234]
 - Fixed a bug in `<sl-select>` when setting the value property before the element connected. [#2255]
+- Fixed a bug in `<sl-select>` where it was using the wrong tag name. [#2287]
 - Fixed a bug in `<sl-carousel>` that caused the navigation icons to be reversed
 - Fixed a bug in `<sl-select>` that prevented label changes in `<sl-option>` from updating the controller [#1971]
 - Fixed a bug in `<sl-textarea>` that caused a console warning in Firefox when typing [#2107]
+- Fixed a bug in `<sl-carousel>` that caused interactive elements to be activated when dragging [#2196]
+- Fixed a bug in `<sl-carousel>` that caused out of order slides when used inside a resize observer [#2260]
+- Fixed a bug in `<sl-rating>` that allowed tabbing into the rating when readonly [#2271]
 - Improved performance of `<sl-range>` by skipping positioning logic when tooltip isn't shown [#2064]
 
 ## 2.18.0
