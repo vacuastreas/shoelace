@@ -29,6 +29,7 @@ New versions of Shoelace are released as-needed and generally occur when a criti
 - Fixed a bug in `<sl-textarea>` that caused a console warning in Firefox when typing [#2107]
 - Improved accessibility of `<sl-split-panel>` by adding support for <kbd>Enter</kbd> to align with ARIA APG's [window splitter pattern](https://www.w3.org/WAI/ARIA/apg/patterns/windowsplitter/) [#2234]
 - Improved performance of `<sl-range>` by skipping positioning logic when tooltip isn't shown [#2064]
+- Updated many dependencies to their latest versions
 
 ## 2.18.0
 
