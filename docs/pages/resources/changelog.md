@@ -16,7 +16,6 @@ New versions of Shoelace are released as-needed and generally occur when a criti
 
 - Added Norwegian translations for Bokmål and Nynorsk [#2268]
 - Added Ukrainian translation [#2270]
-- Added support for <kbd>Enter</kbd> to `<sl-split-panel>` to align with ARIA APG's [window splitter pattern](https://www.w3.org/WAI/ARIA/apg/patterns/windowsplitter/) [#2234]
 - Added community maintained docs for Svelte [#2262]
 - Fixed a bug in `<sl-select>` when setting the value property before the element connected. [#2255]
 - Fixed a bug in `<sl-select>` where it was using the wrong tag name. [#2287]
@@ -28,6 +27,7 @@ New versions of Shoelace are released as-needed and generally occur when a criti
 - Fixed a bug in `<sl-select>` that prevented label changes in `<sl-option>` from updating the controller [#1971]
 - Fixed a bug in `<sl-select>` that caused the placeholder to display incorrectly when using `placeholder` and `multiple` [#2292]
 - Fixed a bug in `<sl-textarea>` that caused a console warning in Firefox when typing [#2107]
+- Improved accessibility of `<sl-split-panel>` by adding support for <kbd>Enter</kbd> to align with ARIA APG's [window splitter pattern](https://www.w3.org/WAI/ARIA/apg/patterns/windowsplitter/) [#2234]
 - Improved performance of `<sl-range>` by skipping positioning logic when tooltip isn't shown [#2064]
 
 ## 2.18.0
