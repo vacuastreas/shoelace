@@ -26,6 +26,7 @@ New versions of Shoelace are released as-needed and generally occur when a criti
 - Fixed a bug in `<sl-rating>` that allowed tabbing into the rating when readonly [#2271]
 - Fixed a bug in `<sl-select>` where it was using the wrong tag name,. [#2287]
 - Fixed a bug in `<sl-select>` that prevented label changes in `<sl-option>` from updating the controller [#1971]
+- Fixed a bug in `<sl-select>` that caused the placeholder to display incorrectly when using `placeholder` and `multiple` [#2292]
 - Fixed a bug in `<sl-textarea>` that caused a console warning in Firefox when typing [#2107]
 - Improved performance of `<sl-range>` by skipping positioning logic when tooltip isn't shown [#2064]
 
