@@ -510,13 +510,19 @@ export default class SlCarousel extends ShoelaceElement {
     // It's best to assume that we will and cleanup in the else case below if we didn't need to
     this.pendingSlideChange = true;
     window.requestAnimationFrame(() => {
+      // This can happen if goToSlide is called before the scroll container is rendered
+      // We will have correctly set the activeSlide in goToSlide which will get picked up when initializeSlides is called.
+      if (!this.scrollContainer) {
+        return;
+      }
+
       const scrollContainer = this.scrollContainer;
       const scrollContainerRect = scrollContainer.getBoundingClientRect();
       const nextSlideRect = slide.getBoundingClientRect();
-      
+
       const nextLeft = nextSlideRect.left - scrollContainerRect.left;
       const nextTop = nextSlideRect.top - scrollContainerRect.top;
-      
+
       if (nextLeft || nextTop) {
         // This is here just in case someone set it back to false
         // between rAF being requested and the callback actually running
